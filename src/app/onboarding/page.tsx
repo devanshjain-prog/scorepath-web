@@ -54,9 +54,14 @@ export default function OnboardingPage() {
         >
           <ArrowLeft className="w-4 h-4" /> Back
         </button>
-        <Link href="/" className="font-bold text-gray-400 hover:text-gray-900 transition-colors text-sm">
-          Quit
-        </Link>
+        <div className="flex items-center gap-4">
+          <Link href="/dashboard" className="font-bold text-purple-600 hover:text-purple-900 transition-colors text-sm">
+            Bypass
+          </Link>
+          <Link href="/" className="font-bold text-gray-400 hover:text-gray-900 transition-colors text-sm">
+            Quit
+          </Link>
+        </div>
       </header>
 
       {/* Main card */}

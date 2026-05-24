@@ -181,6 +181,12 @@ export default function DiagnosticTest() {
             Start 30-Min Test
             <ChevronRight className="w-5 h-5" />
           </button>
+          <Link
+            href="/dashboard"
+            className="w-full py-4 rounded-xl border border-gray-200 text-gray-705 text-gray-700 font-bold hover:bg-gray-50 transition-all flex items-center justify-center gap-2 mt-2 block text-center"
+          >
+            Bypass to Dashboard (Skip Test)
+          </Link>
         </div>
       </div>
     );
@@ -254,7 +260,10 @@ export default function DiagnosticTest() {
       {/* Header & Progress */}
       <header className="w-full bg-white/80 backdrop-blur-md border-b border-slate-100 sticky top-0 z-10">
         <div className="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
-          <Link href="/" className="font-bold tracking-tight text-gray-400 hover:text-gray-900 transition-colors">Quit</Link>
+          <div className="flex gap-4">
+            <Link href="/" className="font-bold tracking-tight text-gray-400 hover:text-gray-900 transition-colors">Quit</Link>
+            <Link href="/dashboard" className="font-bold tracking-tight text-purple-600 hover:text-purple-950 transition-colors">Bypass</Link>
+          </div>
           
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-1.5 px-3 py-1.5 bg-red-50 text-[var(--color-error)] text-xs font-bold rounded-lg border border-red-100">

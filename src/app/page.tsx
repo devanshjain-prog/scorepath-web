@@ -22,6 +22,9 @@ export default function LandingPage() {
           </span>
         </div>
         <div className="flex items-center gap-4">
+          <Link href="/dashboard" className="text-sm font-bold text-purple-600 hover:text-purple-700 transition-colors">
+            Bypass to Dashboard
+          </Link>
           <Link href="/login" className="text-sm font-bold text-gray-500 hover:text-[var(--color-primary)] transition-colors">
             Log In
           </Link>
@@ -80,6 +83,12 @@ export default function LandingPage() {
           >
             Start Free Diagnostic
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </Link>
+          <Link 
+            href="/dashboard" 
+            className="px-8 py-4 rounded-xl bg-purple-50 hover:bg-purple-100 text-purple-700 text-base font-bold border border-purple-200 hover:-translate-y-0.5 transition-all flex items-center justify-center w-full sm:w-auto"
+          >
+            Bypass to Dashboard
           </Link>
           <p className="text-xs text-gray-400 sm:ml-4 flex items-center gap-1.5 font-semibold">
             <CheckCircle2 className="w-4 h-4 text-[var(--color-success)]" />
